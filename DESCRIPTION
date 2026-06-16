@@ -1,0 +1,49 @@
+Package: togolab.scrna
+Title: Single-Cell and -Omics Analysis Helpers for the Togo Lab
+Version: 0.1.0
+Authors@R: c(
+    person("Ye Ji", "Choi", email = "yejichoi@uw.edu", role = c("aut", "cre")),
+    person("Togo Lab", role = "cph")
+  )
+Description: Single-cell RNA-seq and downstream -omics analysis helpers for the
+    Bjornstad-Pyle-Tommerdahl (Togo) lab: NEBULA differential expression,
+    feature UMAPs, cell-type composition, GSEA/pathway tools, volcano plots,
+    and Slingshot trajectory inference. Companion to the lightweight 'togolab'
+    core package; heavy analysis dependencies are isolated here.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends:
+    R (>= 4.1.0)
+Imports:
+    dplyr (>= 1.1.0),
+    rlang,
+    togolab
+Suggests:
+    DoubletFinder,
+    doParallel,
+    fgsea,
+    forcats,
+    foreach,
+    ggplot2,
+    ggrepel,
+    ggtext,
+    igraph,
+    nebula,
+    purrr,
+    RColorBrewer,
+    S4Vectors,
+    Seurat,
+    SingleCellExperiment,
+    slingshot,
+    stringr,
+    SummarizedExperiment,
+    tibble,
+    tidyr,
+    uwot,
+    testthat (>= 3.0.0)
+Remotes:
+    uwmdi-togo/togolab,
+    chris-mcginnis-ucsf/DoubletFinder
+Config/testthat/edition: 3
