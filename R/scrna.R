@@ -228,8 +228,8 @@ togo_filter_genes <- function(object,
 #' @param dims        PCA dims to use downstream (default 1:30)
 #' @param resolution  Clustering resolution passed to FindClusters
 #' @return Processed Seurat object
-togo_run_seurat_pipeline <- function(object, d
-                                     ims = 1:30, 
+togo_run_seurat_pipeline <- function(object, 
+                                     dims = 1:30, 
                                      resolution = 0.8) {
   object %>%
     FindVariableFeatures() %>%
