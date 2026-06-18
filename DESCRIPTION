@@ -21,6 +21,8 @@ Imports:
     rlang,
     togolab
 Suggests:
+    digest,
+    aws.s3,
     DoubletFinder,
     doParallel,
     fgsea,
