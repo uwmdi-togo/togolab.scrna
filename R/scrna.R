@@ -123,6 +123,7 @@ togo_run_doubletfinder <- function(object, multiplet_rate = NULL,
 #' @param input_col  Name of the fine-grained cell type column
 #' @param output_col Name of the new general group column to add
 #' @return Seurat object with `output_col` added to metadata
+#' @export
 togo_add_celltype_groups <- function(object,
                                      celltype_groups,
                                      input_col  = "KPMP_celltype",
@@ -163,6 +164,7 @@ togo_add_celltype_groups <- function(object,
 #' @param mito_pattern     Regex for mitochondrial genes (default human)
 #' @param ribo_genes       Character vector of ribosomal gene names
 #' @return Filtered Seurat object
+#' @export
 togo_filter_mito_ribo <- function(object,
                                   mito_pattern   = "^MT-",
                                   ribo_genes     = NULL) {
@@ -196,6 +198,7 @@ togo_filter_mito_ribo <- function(object,
 #' @param pct_threshold    Min fraction of cells in ≥1 cell type expressing a gene
 #' @param celltype_col     Metadata column used to stratify expression threshold
 #' @return Filtered Seurat object
+#' @export
 togo_filter_genes <- function(object,
                               pct_threshold = 0.5,
                               celltype_col = "KPMP_celltype_general") {
@@ -228,6 +231,7 @@ togo_filter_genes <- function(object,
 #' @param dims        PCA dims to use downstream (default 1:30)
 #' @param resolution  Clustering resolution passed to FindClusters
 #' @return Processed Seurat object
+#' @export
 togo_run_seurat_pipeline <- function(object, 
                                      dims = 1:30, 
                                      resolution = 0.8) {
