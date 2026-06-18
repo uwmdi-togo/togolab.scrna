@@ -14,7 +14,7 @@ don't burden the core.
 
 ```r
 # install.packages("remotes")
-remotes::install_github("uwmdi-togo/togolab_scrna")
+remotes::install_github("uwmdi-togo/togolab.scrna")
 library(togolab.scrna)
 ```
 
