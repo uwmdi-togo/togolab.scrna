@@ -200,7 +200,7 @@ togo_filter_mito_ribo <- function(object,
 #' @return Filtered Seurat object
 #' @export
 togo_filter_genes <- function(object,
-                              pct_threshold = 0.5,
+                              pct_threshold = 0.05,
                               celltype_col = "KPMP_celltype_general") {
   
   # --- per-cell-type expression threshold ---
