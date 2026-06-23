@@ -6,10 +6,6 @@ Bjornstad-Pyle-Tommerdahl (Togo) lab. Companion to the lightweight
 analysis dependencies (Seurat, nebula, fgsea, slingshot, …) live here so they
 don't burden the core.
 
-> **Package name vs repo:** the installable package is `togolab.scrna`
-> (R package names can't contain underscores); the GitHub repo is
-> `togolab_scrna`.
-
 ## Install
 
 ```r
